@@ -1,0 +1,34 @@
+body {
+  background: url(1.jpg);
+  background-size: contain;
+}
+.foto {
+  height: 250px;
+  width: 170px;
+  margin-left: 65.4%;
+  inline-size: 10%;
+  border-radius: 40%;
+  margin-top: 0%;
+}
+#script {
+  height: 200px;
+  width: 200px;
+}
+#test {
+  border: none;
+  height: 200px;
+  width: 400px;
+  margin-left: 50%;
+  margin-top: 9%;
+  padding-left: 100px;
+}
+p {
+  color: blueviolet;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.3em;
+}
+h2 {
+  color: blueviolet;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 15%;
+}

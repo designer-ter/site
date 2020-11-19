@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>сайт-візитка</title>
+    <script type="text/javascript" src="js/jgallery.min.js?v=2.2.1"></script>
+</head>
+<body>
+    <img class="foto" src="nata.jpg"/>
+    <div id="test"><p><b><i><h2><u>Привіт! (Hello!)</u></h2></i></b></p>
+        <p><i>Мене звати Наталія і я <b><font color="orange">веб-дизайнер</font></b>.</br>
+           My name is Nata and I'am <font color="orange"><b>web-designer</b></font>.</i></p>
+        </div>
+    <br></br>
+    <br></br>
+    <br></br>
+    <div id="gallery">
+    </div>
+
+    <script type="text/javascript">
+        document.querySelector('#gallery').appendChild(JGallery.create([{
+            title: 'Мої роботи',
+            items: [
+                {
+                    url: 'images/large/1.jpg',
+                    thumbUrl: 'images/thumbs/1.jpg',
+                    title: 'Візитка',
+                    hash: 'photo-1'
+                },
+                {
+                    url: 'images/large/2.jpg',
+                    thumbUrl: 'images/thumbs/2.jpg',
+                    title: 'Сайт',
+                    hash: 'photo-2'
+                },
+                {
+                    url: 'images/large/3.jpg',
+                    thumbUrl: 'images/thumbs/3.jpg',
+                    title: 'Графічний дизайн',
+                    hash: 'photo-3'
+                },
+                {
+                    url: 'images/large/4.jpg',
+                    thumbUrl: 'images/thumbs/4.jpg',
+                    title: 'Сайт',
+                    hash: 'photo-4'
+                },
+                {
+                    url: 'images/large/5.jpg',
+                    thumbUrl: 'images/thumbs/5.jpg',
+                    title: 'Сайт',
+                    hash: 'photo-5'
+                },
+                {
+                    url: 'images/large/6.jpg',
+                    thumbUrl: 'images/thumbs/6.jpg',
+                    title: 'Колаж',
+                    hash: 'photo-6'
+                },
+            ]
+        }, {
+            title: 'Відео',
+            items: [
+                {
+                    element: JGallery.createElement('<video src="video/Как создать сайт самому. Лекция Масяни..mp4" loop autoplay/>'),
+                    thumbElement: JGallery.createElement('<span>Масяня</span>'),
+                    title: 'Масяня',
+                    hash: 'video'
+                },
+                {
+                    element: JGallery.createElement('<span style="font-size: 10vmax">WEB-DESIGNER</span>'),
+                    thumbElement: JGallery.createElement('<span>Крутяк</span>'),
+                    title: 'Крутяк',
+                    hash: 'html'
+                }
+            ]
+        }]).getElement());
+    </script>
+   
+
+</body>
+</html>.
